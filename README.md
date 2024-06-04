@@ -3,7 +3,7 @@
 Uçuş Rezervasyon Uygulaması, uçak bilgileri, lokasyonlar ve rezervasyonlar gibi uçuşla ilgili verilerin yönetimini sağlayan bir Windows Form uygulamasıdır. Kullanıcıların uçak, konum ve rezervasyon verilerini eklemelerini, güncellemelerini ve silmelerini kolaylaştıran kullanıcı dostu bir arayüz sunar. Uygulama, uçuş rezervasyonlarını ve ilgili bilgilerin yönetimini kolaylaştırmayı amaçlamaktadır. Ayrıca bu uygulama, SQLite veritabanı kullanarak verileri depolamaktadır.
 
 ----------------------
-#KURULUM
+# KURULUM
 
 * Projeyi GitHub veya benzer bir platformdan klonlayın veya projenin zip dosyasını indirin.
 * Visual Studio veya benzer bir IDE kullanarak projeyi açın.
@@ -11,7 +11,7 @@ Uçuş Rezervasyon Uygulaması, uçak bilgileri, lokasyonlar ve rezervasyonlar g
 * Projeyi derleyin ve çalıştırın.
 
 ------------------------
-#Kullanım Kılavuzu:
+# Kullanım Kılavuzu:
 
 UÇAK KAYIT YÖNETİMİ
 
@@ -33,15 +33,22 @@ REZERVASYON YÖNETİMİ
 * "ReservationInfo" formu aracılığıyla uçuş lokasyon ve kişisel bilgilerinizi girdikten sonra rezervasyon oluşturabilir ve kaydedebilirsiniz.
 * Bilgiler girildikten sonra koltuk numarası seçip kayıt ediniz.
 * Rezervasyonları görüntülemek için "ReservationInfo" formunu kullanabilirsiniz.
-
-EK BİLGİLER
+  
+-----------------------
+# EK BİLGİLER
 
 * TÜM FORMLAR İÇİN GEREKLİ BİLGİLER GİRİLDİKTEN SONRA KAYIT ETMEK İÇİN SAVE BUTONUNA BASILMALIDIR. 
 * GİRDİĞİNİZ VERİYİ DÜZENLEMEK İÇİN DATAGRİDWİEV NESNESİNDEN İLGİLİ SATIRI SEÇİP DÜZELTMEK İSTEDİĞİNİZ YERİ DÜZELTİP "UPDATE" BUTONUNA BASIN.
 * GİRDİĞİNİZ VERİYİ SİLMEK İÇİN DATAGRİDWİEV NESNESİNDEN İLGİLİ SATIRI SEÇİP "DELETE" BUTONUNA BASIN.
-* 
+* REZERVASYON İŞLEMİNDE VERİLER GİRİLDİTEN SONRA AŞAĞIDA YEŞİL YANAN KOLTUKLARDAN SEÇİLİP KAYDIN TAMAMLANMASINI SAĞLAYIN.
+
+* UÇAK KAYIT MODELİ SINIFI İÇİN Aircraft.cs SINIFI KULLANILMIŞTIR.
+* LOKASYON KAYIT MODELİ SINIFI İÇİN Location.cs SINIFI KULLANILMIŞTIR.
+* REZERVASYON KAYIT MODELİ SINIFI İÇİN Reservation.cs SINIFI KULLANILMIŞTIR.
+* SQLİTE KAYDI İÇİN ReservationDataBase.db KULLANILMIŞTIR.
+  
 ----------------------
-#GELİŞTİRİCİ NOTLARI
+# GELİŞTİRİCİ NOTLARI
 
 * Proje, C# programlama dili ve .NET Framework kullanılarak geliştirilmiştir.
 * Entity Framework Core kullanılarak SQLite veritabanı işlemleri gerçekleştirilmiştir.
